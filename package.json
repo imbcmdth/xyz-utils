@@ -1,0 +1,29 @@
+{
+  "name": "xyz-utils",
+  "description": "Simple conversions between XYZ and RGB or xyY color spaces",
+  "version": "0.5.0",
+  "homepage": "https://github.com/imbcmdth/xyz-utils",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imbcmdth/xyz-utils.git"
+  },
+  "author": {
+    "name": "Jon-Carlos Rivera",
+    "email": "jon.carlos.rivera@gmail.com",
+    "url": "http://jon-carlos.com"
+  },
+  "keywords": [
+    "high dynamic range",
+    "color space conversion",
+    "xyy",
+    "rgb",
+    "xyz"
+  ],
+  "devDependencies": {
+    "mocha": "1.8.1"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "license": "MIT"
+}
