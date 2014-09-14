@@ -1,7 +1,7 @@
 {
   "name": "xyz-utils",
   "description": "Simple conversions between XYZ and RGB, xyY, or Luv color spaces",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "homepage": "https://github.com/imbcmdth/xyz-utils",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "color space conversion",
     "xyy",
     "rgb",
-    "luv"
+    "luv",
     "xyz"
   ],
   "devDependencies": {
