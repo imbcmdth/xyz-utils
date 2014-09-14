@@ -53,7 +53,7 @@ Current functions are:
 
 ## Versions
 
-* [v0.5.2](https://github.com/imbcmdth/xyz-utils/archive/v0.5.2.zip) Allows an optional second argument for an array to fill to avoid allocating tons of little arrays in hot loops
+* [v0.5.1](https://github.com/imbcmdth/xyz-utils/archive/v0.5.1.zip) Allows an optional second argument for an array to fill to avoid allocating tons of little arrays in hot loops
 * [v0.5.0](https://github.com/imbcmdth/xyz-utils/archive/v0.5.0.zip) Initial public release
 
 ## License - MIT

@@ -17,6 +17,7 @@
     "color space conversion",
     "xyy",
     "rgb",
+    "luv"
     "xyz"
   ],
   "devDependencies": {
