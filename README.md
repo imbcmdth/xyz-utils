@@ -8,6 +8,8 @@ A simple set of functions to convert between XYZ and other color spaces (current
 
 * [Basic Usage](#basic-usage)
 
+* [API](#api)
+
 * [Versions](#versions)
 
 * [License](#license---mit)
@@ -35,8 +37,23 @@ var xyzColor = xyzUtils.fromRGB(rgbColor);
 
 xyzUtils.toRGB(xyzColor); //=> [1.2, 22.5, 1.9]
 ```
+
+## API
+
+All functions are of the format: `outputArray = function (inputColorArray[, outputArray])`. All "from\*" functions return XYZ and all "to\*" functions expect XYZ.
+
+Current functions are:
+
+* toRGB
+* fromRGB
+* toxyY
+* fromxyY
+* toLuv
+* fromLuv
+
 ## Versions
 
+* [v0.5.2](https://github.com/imbcmdth/xyz-utils/archive/v0.5.2.zip) Allows an optional second argument for an array to fill to avoid allocating tons of little arrays in hot loops
 * [v0.5.0](https://github.com/imbcmdth/xyz-utils/archive/v0.5.0.zip) Initial public release
 
 ## License - MIT
