@@ -12,8 +12,8 @@ var RGBtoXYZ = [
 	0.0193, 0.1192, 0.9505
 ];
 
-function MatrixVectorMultiply (mat, vec) {
-	var result = [];
+function MatrixVectorMultiply (mat, vec, result) {
+	result = result || [];
 
 	result[0] = mat[0] * vec[0] + mat[1] * vec[1] + mat[2] * vec[2];
 	result[1] = mat[3] * vec[0] + mat[4] * vec[1] + mat[5] * vec[2];
@@ -22,13 +22,15 @@ function MatrixVectorMultiply (mat, vec) {
 	return result;
 }
 
-function toxyY (vec) {
-	var result = [];
+function toxyY (vec, result) {
+	result = result || [];
 
 	var sum = vec[0] + vec[1] + vec[2];
 
 	if (!sum) {
-		return [1/3, 1/3, 0];
+		result[0] = result[1] = 1 / 3;
+		result[2] = 0;
+		return result;
 	}
 
 	result[0] = vec[0] / sum;
@@ -38,11 +40,12 @@ function toxyY (vec) {
 	return result;
 }
 
-function fromxyY (vec) {
-	var result = [];
+function fromxyY (vec, result) {
+	result = result || [];
 
 	if (!vec[1]) {
-		return [0, 0, 0];
+		result[0] = result[1] = result[2] = 0;
+		return result;
 	}
 
 	result[0] = vec[0] * vec[2] / vec[1];
